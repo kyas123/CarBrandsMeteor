@@ -22,7 +22,24 @@
 							</tr>
 						</thead>
 						<tbody>
-
+						{{#each carbrands}}
+							<tr>
+								<td>{{make}}</td>
+								<td>{{model}}</td>
+								<td>{{brand}}</td>
+							</tr>
+						{{/each}}
+						<tr>
+							<td>
+								<input type="text" name="make" value="" id="make">
+							</td>
+							<td>
+								<input type="text" name="model" value="" id="model">
+							</td>
+							<td>
+								<input type="text" name="brand" value="" id="brand">
+							</td>
+						</tr>
 						</tbody>
 					</table>
 				</div>
